@@ -1,0 +1,45 @@
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    @include respond(sp){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.bg{
+    height: 100%;
+    position: relative;
+    &__img{
+        width: 100%; 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__text{
+        font-size: 3.2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        top: 3.8rem;
+        right: 8rem;
+        width: 24rem;
+    
+        @include respond(sp){
+            position: absolute;
+            top: 2.5rem;
+            right: 1.5rem;
+            font-size: 2.4rem;
+            width: auto;
+        }
+
+        @include respond(450){
+            top: 1rem;
+            right: 1.2rem;
+            font-size: 1.6rem;
+            width: auto;
+        }
+    }
+}

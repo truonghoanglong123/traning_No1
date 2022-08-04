@@ -1,0 +1,103 @@
+.section-logo{
+    padding: 2.5rem 0; //
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:$bg-primary ;
+    width: 100%;
+    @include respond(sp){
+        padding: 2rem 0;
+        position: fixed;
+        z-index: 10;
+    }
+
+}
+.section-bg{
+    @include respond(sp){
+        margin-top: 8rem;
+    }
+}   
+.section-menu{
+    padding: 2.3rem 0;
+    background-color: white;
+    margin: 0 auto;
+}
+.section-news{
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__content{
+        margin-top: 3rem;
+        padding: 0 16rem;
+        padding-right: 15rem;
+        @include respond(sp){
+            padding: 0;
+        }
+    }
+
+    @include respond(sp){
+        padding: 0 0 3rem 0;
+    }
+}
+
+.section-features{
+    padding-top: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(tab-port){
+        padding-top: 10rem;
+    }
+    @include respond(phone){
+        padding-top: 6rem;
+    }
+    @include respond(mini-phone){
+        padding-top: 4rem;
+    }
+}
+
+.section-subscription{
+    padding-top: 9.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include respond(sp){
+        padding-top: 12rem;
+    }
+}
+.section-items{
+    padding: 11rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include respond(sp){
+        padding: 10.5rem 0 0 0;
+    }
+}
+
+.section-copyright{
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: 0.5rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.425rem;
+    font-weight: 500;
+    &--title{
+        @include respond(sp){
+            margin: 2rem 0;
+        }
+    }
+    @include respond(sp){
+        font-size: 1.28rem;
+        font-weight: 600;
+        color:$color-text-nav;
+    }
+}

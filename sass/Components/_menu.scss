@@ -1,0 +1,122 @@
+.nav{
+    &__checkbox{
+        display: none;
+    }
+    &__checkbox:checked ~ &-menu{
+        @include respond(sp){
+            display: block;
+        }
+    }
+    &__button{
+        display: none;
+        @include respond(sp){
+            display: block;
+            z-index: 999999;
+        }
+    }
+    &__icon{
+        position: fixed;
+        top: 3.3rem;
+        right: 2rem;
+        z-index: 9999999;
+        &,
+        &::after,
+        &::before{
+            width: 3.5rem;
+            height: 0.4rem;
+            background-color: black;
+            display: block;
+            z-index: 999999;
+            border-radius: 10rem;
+        }
+        &::after,
+        &::before{
+            content: "";
+            position:absolute;
+            left: 0;
+        }
+        &::before{
+            top: -.8rem;
+        }
+        &::after{
+            top: .8rem;
+        }
+    }
+    &-menu{
+        @include respond(sp){
+            display: none; //
+            position: absolute;
+            top: 7rem;
+            background-color: rgba($color: #ffff, $alpha: .9);
+            width: 100%;
+            height: 200vh;
+            z-index: 10;
+        }
+        &__ul{
+            @include respond(sp){
+                display: flex;
+                flex-direction: column;
+            }
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            &--li{
+                border-left: 2px solid $color-line;
+                @include respond(sp){
+                    display: inline-block;
+                    height: 100%;
+                    border-left: none;
+                    padding: 3rem 0;
+                    border-top: 2px solid $color-line;
+                }
+                display: inline-block;
+                width: 100%;
+                &:hover{
+                    background-color: #fafafa;
+                }
+                &:last-child{
+                    border-right: 2px solid $color-line;
+                    @include respond(sp){
+                        border-right: none;
+                        border-bottom: 2px solid $color-line;
+                    }
+                }
+                &--a{
+                    @include respond(sp){
+                        display: inline-block;
+                        width: 100%;
+                    }
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    width: 100%;
+                    color: black;
+                    transition: all .2s;
+                    &:hover{
+                        color: $color-text-hover ;
+                    }
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.fixed {
+    @include respond(pc){
+        position:fixed;
+        z-index: 2;
+        top: 3rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+    @include respond(big-pc){
+        position:fixed;
+        z-index: 2;
+        top: 3rem;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+    }
+}

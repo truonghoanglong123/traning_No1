@@ -1,0 +1,57 @@
+.features{
+    display: flex;
+    margin-top: 5rem;
+    @include respond(sp){          
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0rem;
+    }
+    &__img{
+        margin-right: 5rem;
+        margin-top: 0.3rem;
+        max-width: 32.5rem;
+        height: 100%;
+        @include respond(sp){
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+    &__content{
+        &--title{
+            font-size: 2.4rem;
+            font-weight: 700;
+            margin-bottom: 2.25rem;
+            @include respond(sp){
+                font-size: 2.4rem;
+                font-weight: 500;
+                margin-top: 1rem;
+                color: $color-text-nav;
+            }
+        }
+        &--text{
+            font-size: 1.6rem;
+            &--img{
+                float: right;
+                max-width: 23rem;
+                width: 100%;
+                @include respond(sp){
+                    float: none;
+                    position: relative;
+                    top:2rem;
+                    left: 47%;
+                    transform: translate(-50%,0);
+                }
+            }
+            &--text{
+                font-size: 1.6rem;
+                @include respond(sp){
+                    margin-top: 7rem;
+                    font-size: 1.6rem;
+                    word-break: break-all;
+                }
+            }
+        }
+        
+    }
+}

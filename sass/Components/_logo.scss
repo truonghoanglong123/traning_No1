@@ -1,0 +1,7 @@
+.logo{
+    display: flex;  
+    @include respond(sp){
+        width: 80%;
+        margin: 0 2rem;
+    }
+}
