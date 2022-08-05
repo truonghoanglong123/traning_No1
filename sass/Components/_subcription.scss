@@ -77,12 +77,12 @@
             font-size: 1.6rem;
             font-weight: 700;
             color:$color-button ;
-            padding: 1.5rem 9rem;
             border: none;
             outline: none;
             background-color: #eeeeee;
             cursor: pointer;
             text-decoration: none;
+            padding: 1.5rem 8rem;
             @include respond(sp){
                 font-size: 1.6rem;
                 word-break: break-all;

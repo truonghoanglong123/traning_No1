@@ -49,6 +49,9 @@
                 @include respond(sp){
                     margin-top: 7rem;
                     width:100%;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    align-content: center;
                 }
             }
         }

@@ -228,7 +228,8 @@ html, body {
   .bg__img {
     width: 100%;
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    vertical-align: top; }
   .bg__text {
     font-size: 3.2rem;
     font-weight: 600;
@@ -464,7 +465,10 @@ html, body {
       @media (max-width: 750px) {
         .features__content--text--text {
           margin-top: 7rem;
-          width: 100%; } }
+          width: 100%;
+          flex-wrap: wrap;
+          align-items: center;
+          align-content: center; } }
 
 .subscription-text {
   font-size: 1.6rem;
@@ -538,12 +542,12 @@ html, body {
       font-size: 1.6rem;
       font-weight: 700;
       color: #454545;
-      padding: 1.5rem 9rem;
       border: none;
       outline: none;
       background-color: #eeeeee;
       cursor: pointer;
-      text-decoration: none; }
+      text-decoration: none;
+      padding: 1.5rem 8rem; }
       @media (max-width: 750px) {
         .subscription__button--btn {
           font-size: 1.6rem;
