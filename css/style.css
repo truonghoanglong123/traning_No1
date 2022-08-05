@@ -192,7 +192,8 @@ html, body {
   font-weight: 500; }
   @media (max-width: 750px) {
     .section-copyright--title {
-      margin: 2rem 0; } }
+      margin: 2rem 0;
+      font-size: 1.28rem; } }
   @media (max-width: 750px) {
     .section-copyright {
       font-size: 1.28rem;
@@ -286,10 +287,11 @@ html, body {
   .nav-menu {
     display: none;
     position: absolute;
-    top: 7rem;
+    top: 8rem;
+    left: 0;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
-    height: 200vh;
+    height: 300vh;
     z-index: 10; } }
 
 .nav-menu__ul {
@@ -510,7 +512,8 @@ html, body {
     letter-spacing: 0.12rem; }
     @media (max-width: 750px) {
       .subscription__price {
-        font-size: 4rem; } }
+        font-size: 4rem;
+        line-height: 1; } }
   .subscription__detail {
     margin-top: .8rem;
     font-size: 1.4rem;
