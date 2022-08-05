@@ -31,6 +31,7 @@
         }
         &--text{
             font-size: 1.6rem;
+            width:100%;
             &--img{
                 float: right;
                 max-width: 23rem;
@@ -39,7 +40,7 @@
                     float: none;
                     position: relative;
                     top:2rem;
-                    left: 47%;
+                    left: 50%;
                     transform: translate(-50%,0);
                 }
             }
@@ -47,8 +48,7 @@
                 font-size: 1.6rem;
                 @include respond(sp){
                     margin-top: 7rem;
-                    font-size: 1.6rem;
-                    word-break: break-all;
+                    width:100%;
                 }
             }
         }

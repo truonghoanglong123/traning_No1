@@ -1,16 +1,21 @@
 .nav{
     &__checkbox{
         display: none;
+        width: 200%;
+        height: 200%;
     }
     &__checkbox:checked ~ &-menu{
         @include respond(sp){
-            display: block;
+            display: inline-block;
         }
     }
     &__button{
         display: none;
         @include respond(sp){
-            display: block;
+            cursor: pointer;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
             z-index: 999999;
         }
     }
@@ -27,7 +32,7 @@
             background-color: black;
             display: block;
             z-index: 999999;
-            border-radius: 10rem;
+            border-radius: 3rem;
         }
         &::after,
         &::before{
@@ -50,7 +55,7 @@
             left: 0;
             background-color: rgba($color: #ffff, $alpha: .9);
             width: 100%;
-            height: 300vh;
+            height: 200vh;
             z-index: 10;
         }
         &__ul{
@@ -67,8 +72,9 @@
                     display: inline-block;
                     height: 100%;
                     border-left: none;
-                    padding: 3rem 0;
-                    border-top: 2px solid $color-line;
+                    padding: 1rem 0;
+                    border-top: 1px solid $color-line;
+                    font-size: 1.6rem;
                 }
                 display: inline-block;
                 width: 100%;
@@ -86,6 +92,7 @@
                     @include respond(sp){
                         display: inline-block;
                         width: 100%;
+                        color:$color-text-nav ;
                     }
                     text-decoration: none;
                     text-transform: uppercase;
@@ -96,7 +103,7 @@
                     &:hover{
                         color: $color-text-hover ;
                     }
-                    font-weight: 500;
+                    font-weight: 400;
                 }
             }
         }
