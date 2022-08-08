@@ -266,6 +266,10 @@ html, body {
   .nav__checkbox:checked ~ .nav-menu {
     display: inline-block; } }
 
+@media (max-width: 750px) {
+  .nav__checkbox:checked body {
+    overflow-y: hidden; } }
+
 .nav__button {
   display: none; }
   @media (max-width: 750px) {
@@ -377,9 +381,8 @@ html, body {
     transform: translate(-50%, -50%);
     width: 100%; } }
 
-@media (max-width: 750px) {
-  .over {
-    scroll-behavior: hidden; } }
+.over {
+  overflow-y: hidden !important; }
 
 .news {
   background-color: #fafafa;

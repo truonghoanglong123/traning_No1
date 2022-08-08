@@ -12,9 +12,9 @@ window.addEventListener('scroll',function(){
 
 
 
-// var button = document.querySelector('.nav__button')
-// var nav = document.querySelector('.nav')
+var button = document.querySelector('.nav__button')
+var body = document.querySelector('html')
 
-// button.addEventListener('click',function(){
-//     console.log("-------")
-// })
+button.addEventListener('click',function(){
+    body.classList.toggle('over')
+})
