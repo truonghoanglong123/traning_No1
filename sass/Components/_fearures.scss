@@ -39,7 +39,6 @@
                 @include respond(sp){
                     float: none;
                     position: relative;
-                    top:2rem;
                     left: 50%;
                     transform: translate(-50%,0);
                 }
@@ -47,8 +46,9 @@
             &--text{
                 font-size: 1.6rem;
                 @include respond(sp){
-                    margin-top: 7rem;
+                    margin-top: 2rem;
                     width:100%;
+                    display: flex;
                     flex-wrap: wrap;
                     align-items: center;
                     align-content: center;
