@@ -1,5 +1,4 @@
 var menu = document.querySelector(".section-menu")
-
 var fixed = document.querySelector('.fixed')
 window.addEventListener('scroll',function(){
     // console.log(window.pageYOffset)
@@ -10,11 +9,10 @@ window.addEventListener('scroll',function(){
     }
 })
 
-
+//////
 
 var button = document.querySelector('.nav__button')
 var body = document.querySelector('html')
-
 button.addEventListener('click',function(){
     body.classList.toggle('over')
 })

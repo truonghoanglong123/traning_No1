@@ -321,8 +321,7 @@ html, body {
       position: fixed;
       display: flex;
       flex-direction: column;
-      width: 100%;
-      background-color: rgba(255, 255, 255, 0.9); } }
+      width: 100%; } }
   .nav-menu__ul--li {
     border-left: 2px solid #cccccc;
     display: inline-block;
@@ -550,16 +549,17 @@ html, body {
     @media (max-width: 750px) {
       .subscription__title {
         margin-top: 1.1rem;
-        font-size: 2.2rem; } }
+        font-size: 2.2rem;
+        font-weight: 700; } }
   .subscription__price {
     font-size: 3.8rem;
-    font-weight: 600;
-    letter-spacing: 0.12rem; }
+    font-weight: 600; }
     @media (max-width: 750px) {
       .subscription__price {
         font-size: 4rem;
         line-height: 1.7;
-        margin: -.5rem 0; } }
+        margin: -.5rem 0;
+        letter-spacing: 0.05rem; } }
   .subscription__detail {
     margin-top: .8rem;
     font-size: 1.4rem;
@@ -567,7 +567,8 @@ html, body {
     text-align: center; }
     @media (max-width: 750px) {
       .subscription__detail {
-        font-size: 1.4rem; } }
+        font-size: 1.6rem;
+        margin-top: 2rem; } }
   .subscription__button {
     margin: 3rem 0 2.8rem 0; }
     @media (max-width: 750px) {
@@ -586,7 +587,6 @@ html, body {
       @media (max-width: 750px) {
         .subscription__button--btn {
           font-size: 1.6rem;
-          word-break: break-all;
           padding: 1rem 7rem; } }
   .subscription:hover {
     transform: translateY(-1rem);
