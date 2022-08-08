@@ -81,7 +81,6 @@ html, body {
     text-transform: uppercase;
     font-weight: 700;
     position: relative;
-    cursor: pointer;
     display: inline-block; }
     @media (max-width: 750px) {
       .text__primary {
@@ -93,15 +92,10 @@ html, body {
       background-image: linear-gradient(to right, #c9e23f, #48e3dc);
       position: absolute;
       top: .1rem;
-      left: 0;
-      transition: all .5s ease-in-out; }
+      left: 0; }
       @media (max-width: 750px) {
         .text__primary::after {
-          font-size: 4.8rem;
-          height: .4rem;
-          width: 8rem; } }
-    .text__primary:hover::after {
-      width: 100%; }
+          font-size: 4.8rem; } }
 
 .container {
   margin-left: auto;
@@ -167,7 +161,7 @@ html, body {
   @media (max-width: 750px) {
     .section-news {
       padding: 0 0 3rem 0;
-      margin-top: -4rem; } }
+      margin-top: -3.5rem; } }
 
 .section-features {
   padding-top: 8.5rem;
@@ -358,6 +352,10 @@ html, body {
           display: inline-block;
           width: 100%;
           color: #454545; } }
+      .nav-menu__ul--li--a--active {
+        color: #9aaf24;
+        text-decoration: none;
+        text-transform: uppercase; }
       .nav-menu__ul--li--a:hover {
         color: #9aaf24; }
 
@@ -379,6 +377,10 @@ html, body {
     transform: translate(-50%, -50%);
     width: 100%; } }
 
+@media (max-width: 750px) {
+  .over {
+    scroll-behavior: hidden; } }
+
 .news {
   background-color: #fafafa;
   border: 1px solid #f1f1f1;
@@ -386,6 +388,11 @@ html, body {
   @media (max-width: 750px) {
     .news {
       padding: 3rem 0 1rem 0; } }
+
+@media (max-width: 750px) {
+  .text {
+    padding-top: 1rem;
+    padding-bottom: 1rem; } }
 
 .section-news__content {
   margin-top: 2.5rem;
@@ -462,7 +469,8 @@ html, body {
         font-size: 2.4rem;
         font-weight: 500;
         margin-top: 1rem;
-        color: #454545; } }
+        color: #454545;
+        padding: 0 .5rem; } }
   .features__content--text {
     font-size: 1.6rem;
     width: 100%; }
@@ -485,7 +493,8 @@ html, body {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          align-content: center; } }
+          align-content: center;
+          padding: 0 .5rem; } }
 
 .subscription-text {
   font-size: 1.6rem;
@@ -545,9 +554,9 @@ html, body {
     letter-spacing: 0.12rem; }
     @media (max-width: 750px) {
       .subscription__price {
-        font-size: 3.6rem;
-        line-height: 1;
-        margin-top: .5rem; } }
+        font-size: 4rem;
+        line-height: 1.7;
+        margin: -.5rem 0; } }
   .subscription__detail {
     margin-top: .8rem;
     font-size: 1.4rem;
@@ -555,8 +564,7 @@ html, body {
     text-align: center; }
     @media (max-width: 750px) {
       .subscription__detail {
-        font-size: 1.6rem;
-        margin-top: 1.6rem; } }
+        font-size: 1.4rem; } }
   .subscription__button {
     margin: 3rem 0 2.8rem 0; }
     @media (max-width: 750px) {

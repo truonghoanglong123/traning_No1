@@ -4,11 +4,12 @@
         width: 200%;
         height: 200%;
     }
-    &__checkbox:checked ~ &-menu{
+    &__checkbox:checked ~ &-menu{ 
         @include respond(sp){
             display: inline-block;
         }
     }
+
     &__button{
         display: none;
         @include respond(sp){
@@ -103,6 +104,11 @@
                     width: 100%;
                     color: black;
                     transition: all .2s;
+                    &--active{
+                        color: $color-text-hover ;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                    }
                     &:hover{
                         color: $color-text-hover ;
                     }
@@ -129,5 +135,10 @@
         left: 50%;
         transform: translate(-50%,-50%);
         width: 100%;
+    }
+}
+.over{
+    @include respond(sp){
+        scroll-behavior: hidden;
     }
 }

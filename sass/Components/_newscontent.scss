@@ -7,6 +7,12 @@
     }
 }
 
+.text{
+    @include respond(sp){
+        padding-top:1rem ;
+        padding-bottom:1rem ;
+    }
+}
 
 .section-news__content{
     margin-top: 2.5rem;
