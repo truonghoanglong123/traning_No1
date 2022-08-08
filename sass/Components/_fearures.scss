@@ -10,7 +10,7 @@
     &__img{
         margin-right: 5rem;
         margin-top: 0.3rem;
-        max-width: 32.5rem;
+        width: 32.5rem;
         height: 100%;
         @include respond(sp){
             width: 100%;
@@ -46,6 +46,7 @@
             }
             &--text{
                 font-size: 1.6rem;
+                // line-height: 1.4;
                 @include respond(sp){
                     margin-top: 2rem;
                     width:100%;
