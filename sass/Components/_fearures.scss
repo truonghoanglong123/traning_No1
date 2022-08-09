@@ -10,11 +10,12 @@
     &__img{
         margin-right: 5rem;
         margin-top: 0.3rem;
-        width: 32.5rem;
+        width: 32.2rem;
         height: 100%;
         @include respond(sp){
             width: 100%;
             margin-right: 0;
+            padding: 0 1.6rem;
         }
     }
     &__content{
@@ -27,7 +28,7 @@
                 font-weight: 500;
                 margin-top: 1rem;
                 color: $color-text-nav;
-                padding: 0 .5rem;
+                padding: 0 1.6rem;
             }
         }
         &--text{
@@ -37,6 +38,7 @@
                 float: right;
                 max-width: 23rem;
                 width: 100%;
+                margin-top: 1rem;
                 @include respond(sp){
                     float: none;
                     position: relative;
@@ -45,8 +47,8 @@
                 }
             }
             &--text{
-                font-size: 1.6rem;
-                // line-height: 1.4;
+                font-size: 1.52rem;
+                margin-top: -1rem;
                 @include respond(sp){
                     margin-top: 2rem;
                     width:100%;
@@ -54,7 +56,19 @@
                     flex-wrap: wrap;
                     align-items: center;
                     align-content: center;
-                    padding: 0 .5rem;
+                    padding: 0 1.6rem;
+                }
+                &--things{
+                    display:block;
+                    @include respond(sp){
+                        display: none;
+                    }
+                }
+                &--design{
+                    display: none;
+                    @include respond(sp){
+                        display: block;
+                    }
                 }
             }
         }

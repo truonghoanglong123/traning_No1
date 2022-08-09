@@ -14,5 +14,5 @@
 var button = document.querySelector('.nav__button')
 var body = document.querySelector('html')
 button.addEventListener('click',function(){
-    body.classList.toggle('over')
+    body.classList.toggle('over');
 })

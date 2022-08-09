@@ -1,14 +1,17 @@
 .subscription-text{
     font-size: 1.6rem;
-    padding: 1rem 17rem 5.5rem 17rem;
+    padding: 2rem 18rem 5.5rem 18rem;
+    letter-spacing: -.8px;
     @include respond(sp){
-        padding: 0 1rem;
+        padding: 0 1.6rem;
         font-size: 1.6rem ;
         font-weight: 400;
 
     }
 }
-
+.text-sub{
+    letter-spacing: -1.5px;
+}
 .sub{
     display: flex;
     justify-content: center;
@@ -50,8 +53,9 @@
     }
     &__title{
         margin-top: 1.2rem;
-        font-size: 2rem;
+        font-size: 2.2rem;
         font-weight: 700;
+        color:$color-sub;
         @include respond(sp){
             margin-top: 1.1rem;
             font-size: 2.2rem;
@@ -61,6 +65,8 @@
     &__price{
         font-size: 3.8rem;
         font-weight: 600;
+        color:$color-sub;
+        margin-top: -0.7rem;
         // letter-spacing: 0.12rem;
         @include respond(sp){
             font-size: 4rem;
@@ -70,34 +76,49 @@
         }
     }
     &__detail{
-        margin-top: .8rem;
+        margin-top: 1rem;
         font-size: 1.4rem;
         font-weight: 500;
         text-align: center;
+        color: $color-sub;
+        line-height: 1.4;
         @include respond(sp){
             font-size: 1.6rem;
             margin-top: 3rem;
         }
     }
     &__button{
-        margin: 3rem 0 2.8rem 0;
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 1.8rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color:$color-button ;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: $color-sub;
         @include respond(sp){
             margin: 2.6rem 0 2rem 0;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         &--btn{
-            font-size: 1.6rem;
-            font-weight: 700;
-            color:$color-button ;
-            border: none;
-            outline: none;
-            background-color: #eeeeee;
-            cursor: pointer;
+            font-size: 1.4rem;
+            background-color: $backgroup-button;
+            display: inline-block;
+            width: 100%;
+            height: 50px;
             text-decoration: none;
-            padding: 1.5rem 8rem;
-            @include respond(sp){
-                font-size: 1.6rem;
-                padding: 1rem 7rem;
-            }
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: $color-sub;
         }
     }
     transition: all .5s;
