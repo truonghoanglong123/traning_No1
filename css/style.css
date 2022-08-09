@@ -260,10 +260,6 @@ html, body {
   .nav__checkbox:checked ~ .nav-menu {
     display: inline-block; } }
 
-@media (max-width: 750px) {
-  .nav__checkbox:checked body {
-    overflow-y: hidden; } }
-
 .nav__button {
   display: none; }
   @media (max-width: 750px) {
@@ -375,7 +371,10 @@ html, body {
     width: 100%; } }
 
 .over {
-  position: fixed !important; }
+  position: fixed; }
+
+.displaymenu {
+  display: block; }
 
 .news {
   background-color: #fafafa;

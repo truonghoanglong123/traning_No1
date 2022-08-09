@@ -9,11 +9,11 @@
             display: inline-block;
         }
     }
-    &__checkbox:checked body{
-        @include respond(sp){
-            overflow-y: hidden;
-        }
-    }
+    // &__checkbox:checked body{
+    //     @include respond(sp){
+    //         position: fixed;
+    //     }
+    // }
 
     &__button{
         display: none;
@@ -142,6 +142,8 @@
     }
 }
 .over{
-    position: fixed !important;
-    // overflow: hidden;
+    position: fixed;
+}
+.displaymenu{
+    display: block;
 }

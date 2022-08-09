@@ -13,6 +13,8 @@
 
 var button = document.querySelector('.nav__button')
 var body = document.querySelector('html')
+var nav = document.querySelector('.nav-menu')
 button.addEventListener('click',function(){
     body.classList.toggle('over');
+    nav.classList.toggle('displaymenu');
 })
