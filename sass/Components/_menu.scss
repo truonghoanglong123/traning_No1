@@ -23,8 +23,8 @@
         &,
         &::after,
         &::before{
-            width: 2.75rem;
-            height: 0.42rem;
+            width: 3rem;
+            height: 0.5rem;
             background-color: black;
             display: block;
             z-index: 999999;
@@ -35,14 +35,16 @@
             content: "";
             position:absolute;
             left: 0;
+            transition: all .3s ease-in-out;
         }
         &::before{
-            top: -.8rem;
+            top: -.9rem;
         }
         &::after{
-            top: .8rem;
+            top: .9rem;
         }
     }
+
     &-menu{
         @include respond(sp){
             display: none; //
@@ -66,6 +68,7 @@
             justify-content: space-around;
             &--li{
                 border-left: 2px solid #575757;
+                line-height: 1.4;
                 @include respond(sp){
                     display: inline-block;
                     height: 100%;
@@ -111,6 +114,36 @@
             }
         }
     }
+}
+
+.chuyen{
+    @include respond(sp){
+        .nav__icon{
+            background-color: transparent;
+        }
+        .nav__icon::after{
+            top: 0;
+            transform: rotate(135deg);
+            border-radius: 20%;
+        }
+        .nav__icon::before{
+            top: 0;
+            transform: rotate(-135deg);
+            border-radius: 20%;
+        }
+    }
+}
+
+.gat{
+    margin-top: 7.3rem;
+}
+.hideshow{  
+    animation: dow 1s ease;
+}
+
+@keyframes dow {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }
 
 .fixed {
