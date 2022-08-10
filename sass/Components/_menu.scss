@@ -4,16 +4,6 @@
         width: 200%;
         height: 200%;
     }
-    &__checkbox:checked ~ &-menu{ 
-        @include respond(sp){
-            display: inline-block;
-        }
-    }
-    &__checkbox:checked body{
-        @include respond(sp){
-            overflow-y: hidden;
-        }
-    }
 
     &__button{
         display: none;
@@ -142,6 +132,11 @@
     }
 }
 .over{
-    position: fixed !important;
-    // overflow: hidden;
+    position:fixed;
+    left: 0;
+    width: 100%;
 }
+
+.displaymenu{
+    display: block;
+} 

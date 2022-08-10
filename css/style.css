@@ -120,6 +120,7 @@ html, body {
     .section-logo {
       padding: 1.7125rem 0.075rem;
       position: fixed;
+      top: 0;
       z-index: 20; } }
   @media (max-width: 750px) {
     .section-logo__img {
@@ -155,7 +156,7 @@ html, body {
   @media (max-width: 750px) {
     .section-news {
       padding: 0 0 3rem 0;
-      margin-top: -3.5rem; } }
+      margin-top: 5.5rem; } }
 
 .section-features {
   padding-top: 7rem;
@@ -255,14 +256,6 @@ html, body {
   display: none;
   width: 200%;
   height: 200%; }
-
-@media (max-width: 750px) {
-  .nav__checkbox:checked ~ .nav-menu {
-    display: inline-block; } }
-
-@media (max-width: 750px) {
-  .nav__checkbox:checked body {
-    overflow-y: hidden; } }
 
 .nav__button {
   display: none; }
@@ -375,7 +368,12 @@ html, body {
     width: 100%; } }
 
 .over {
-  position: fixed !important; }
+  position: fixed;
+  left: 0;
+  width: 100%; }
+
+.displaymenu {
+  display: block; }
 
 .news {
   background-color: #fafafa;
@@ -383,8 +381,7 @@ html, body {
   padding: 6rem 0; }
   @media (max-width: 750px) {
     .news {
-      padding: 4rem 0 1rem 0;
-      margin-top: 5.5rem; } }
+      padding: 4rem 0 1rem 0; } }
 
 @media (max-width: 750px) {
   .text {
@@ -604,8 +601,8 @@ html, body {
     @media (max-width: 750px) {
       .subscription__button {
         margin: 2.6rem 0 2rem 0;
-        padding-left: 15px;
-        padding-right: 15px; } }
+        padding-left: 18px;
+        padding-right: 18px; } }
     .subscription__button--btn {
       font-size: 1.4rem;
       background-color: #eeeeee;
