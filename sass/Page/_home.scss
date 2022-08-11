@@ -31,9 +31,13 @@
         margin: 0;
         padding: 0;
     }
+    @include respond(big-pc){
+        margin-top: 4.2rem;
+        padding: 0;
+    }
 }
 .section-news{
-    padding: 2.5rem 0;
+    padding: 2.65rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,20 +55,26 @@
         padding: 0 0 3rem 0;
         margin-top: 5.5rem;
     }
+    @include respond(big-pc){
+        margin-top: 3rem;
+    }
 }
 
 .section-features{
-    padding-top: 7rem;
+    padding-top: 9.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     @include respond(sp){
         padding-top: 2rem;
     }
+    @include respond(big-pc){
+        padding-top: 12rem;
+    }
 }
 
 .section-subscription{
-    padding-top: 11rem;
+    padding-top: 10rem;
     @include respond(sp){
         padding-top: 10rem;
     }
@@ -77,6 +87,9 @@
     justify-content: center;
     @include respond(sp){
         padding: 7rem 0 0 0;
+    }
+    @include respond(big-pc){
+        padding: 12.2rem 0 0 0;
     }
 }
 
@@ -95,6 +108,9 @@
         @include respond(sp){
             padding: 2rem 1rem;
             font-size: 1.2rem;
+        }
+        @include respond(big-pc){
+            padding-top: 1rem;
         }
     }
     @include respond(sp){
