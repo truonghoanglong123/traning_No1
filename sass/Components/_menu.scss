@@ -135,7 +135,10 @@
 }
 
 .gat{
-    margin-top: 7.3rem;
+    margin-bottom: 7.7rem;
+    @include respond(big-pc){
+        margin-bottom: 9rem;
+    }
 }
 .hideshow{  
     animation: dow 1s ease;

@@ -1,17 +1,17 @@
 var menu = document.querySelector(".section-menu")
 var fixed = document.querySelector('.fixed')
-var section_news = document.querySelector('.section-news')
+var section_bg = document.querySelector('.section-bg')
 window.addEventListener('scroll',function(){
     // console.log(window.pageYOffset)
     if(window.pageYOffset > 600){  
         menu.classList.add('fixed')
         menu.classList.add('hideshow')
-        section_news.classList.add('gat')
+        section_bg.classList.add('gat')
         
     }else{
         menu.classList.remove('fixed')
         menu.classList.remove('hideshow')
-        section_news.classList.remove('gat')
+        section_bg.classList.remove('gat')
     }
 })
 

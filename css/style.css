@@ -139,10 +139,6 @@ html, body {
     .section-menu {
       margin: 0;
       padding: 0; } }
-  @media (min-width: 1260px) {
-    .section-menu {
-      margin-top: 4.2rem;
-      padding: 0; } }
 
 .section-news {
   padding: 2.65rem 0;
@@ -163,7 +159,7 @@ html, body {
       margin-top: 5.5rem; } }
   @media (min-width: 1260px) {
     .section-news {
-      margin-top: 3rem; } }
+      margin-top: 1rem; } }
 
 .section-features {
   padding-top: 9.5rem;
@@ -380,7 +376,10 @@ html, body {
     border-radius: 20%; } }
 
 .gat {
-  margin-top: 7.3rem; }
+  margin-bottom: 7.7rem; }
+  @media (min-width: 1260px) {
+    .gat {
+      margin-bottom: 9rem; } }
 
 .hideshow {
   animation: dow 1s ease; }
